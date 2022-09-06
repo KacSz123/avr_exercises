@@ -1,5 +1,5 @@
-MCU=atmega328p
-F_CPU=16000000  #clock frequency
+MCU=atmega32
+F_CPU=14745600  #clock frequency
 CC=avr-gcc
 OBJCOPY=avr-objcopy
 CFLAGS=-std=c99 -pedantic -Wall -g -Os -mmcu=${MCU} -DF_CPU=${F_CPU} -I.
