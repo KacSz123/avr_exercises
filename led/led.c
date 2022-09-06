@@ -19,6 +19,7 @@
  */
 volatile uint8_t zmienna[10];
 uint8_t tab[8]={1,2,4,8,16,32,64,128};
+uint8_t tab2[8]={1,2,4,8,16,32,64,128};
 int main(void)
 { 
     DDRC=31;
