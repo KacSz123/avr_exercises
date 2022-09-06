@@ -16,9 +16,10 @@ flash:
 		avrdude -p ${MCU} -c usbasp -U flash:w:${TARGET}.hex:i  -F -P usb
 
 clean:
-		@echo "Cleaning workspace"
+		@echo "Cleaning workspace:"
 		rm -f *.bin *.hex
 
 memory:
+		@echo "Memory usage checking:"
 		avr-size -C --mcu=${MCU} ${TARGET}.bin
 
