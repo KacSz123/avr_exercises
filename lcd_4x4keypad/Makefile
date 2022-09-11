@@ -3,8 +3,8 @@ F_CPU=14745600  #clock frequency
 CC=avr-gcc
 OBJCOPY=avr-objcopy
 CFLAGS=-std=c99 -pedantic -Wall -g -Os -mmcu=${MCU} -DF_CPU=${F_CPU} -I.
-TARGET=led
-SRCS=led.c
+TARGET=keypad_4x4
+SRCS=keypad_4x4.c
 
 all:
 		@echo "building target ${target.o}\n"
